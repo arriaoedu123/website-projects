@@ -18,7 +18,7 @@
 
 # About
 
-This repository is a some of the websites I made based on templates I find on the internet. Feel free to use them.
+This repository have some of the websites I made based on templates I find on the internet. Feel free to use them.
 
 <br>
   
