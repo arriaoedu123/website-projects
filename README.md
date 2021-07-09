@@ -30,6 +30,7 @@ This repository have some of the websites I made based on templates I find on th
   
 ## Websites
 
+  1. [Hardware Store](https://github.com/arriaoedu123/website-projects/tree/main/project01-hardware-store)
 
 <br>
 
