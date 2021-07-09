@@ -11,6 +11,12 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
 </p>
+
+<p align="center">
+  <a href="https://github.com/arriaoedu123/website-projects/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge"/>
+  </a>
+</p>
   
 ***
  
@@ -18,16 +24,11 @@
 
 # About
 
-This repository have some of the websites I made based on templates I find on the internet. Feel free to use them.
+This repository have some of the websites I made based on templates I find on the internet.
 
 <br>
   
-## Non-Responsive
-
-
-
-## Responsive
-
+## Websites
 
 
 <br>
