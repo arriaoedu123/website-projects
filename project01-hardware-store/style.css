@@ -2,8 +2,8 @@
 # Creator: Arreaum
 # GitHub: https://github.com/arriaoedu123/
 # Creation date: 09/07/2021
-# Update date: 
-# Version: 1.0
+# Update date: 10/07/2021
+# Version: 1.1
 */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -119,12 +119,15 @@ input[type="checkbox"] {
     height: 280px;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
+    border-radius: 20px;
 }
 .game-list {
     display: flex;
     height: 300px;
     align-items: center;
     transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
 }
 .game-list-item {
     margin-right: 20px;
