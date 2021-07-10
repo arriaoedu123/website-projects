@@ -5,36 +5,300 @@
 # Update date:
 # Version: 1.0
 -->
-
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
- 	<nav>
-        <div class="logo">
-        	<img src="img/logo.png" alt="Logo">
-        	Hertech
+    <head>
+        <meta charset="utf-8">
+            <meta content="IE=edge" http-equiv="X-UA-Compatible">
+                <title>
+                </title>
+                <link href="style.css" rel="stylesheet">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+                    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                    </meta>
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img alt="Logo" src="img/logo.png">
+                    Hertech
+                </img>
+            </div>
+            <input id="click" type="checkbox">
+                <label class="menu-btn" for="click">
+                    <i class="fas fa-bars">
+                    </i>
+                </label>
+                <ul>
+                    <li>
+                        <a class="active" href="#">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Serviços
+                        </a>
+                    </li>
+                </ul>
+            </input>
+        </nav>
+        <div class="container">
+            <div class="content-container">
+                <div class="featured-content">
+                    <img alt="Minecraft" class="featured-title" src="img/minecraft-title.png"/>
+                    <p class="featured-desc">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <button class="featured-btn">
+                        DETALHES
+                    </button>
+                </div>
+                <!--start MOBA container-->
+                <div class="game-list-container">
+                    <h1 class="game-list-title">
+                        MOBA
+                    </h1>
+                    <div class="game-list-wrapper">
+                        <div class="game-list">
+                            <div class="game-list-item">
+                                <img alt="League of Legends" class="game-list-item-img" src="img/lol.jpg">
+                                    <span class="game-list-item-title">
+                                        League of Legends
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        League of Legends é um jogo eletrônico online gratuito, do gênero batalha multijogador, desenvolvido e publicado pela Riot Games em 2009.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Dota 2" class="game-list-item-img" src="img/dota2.jpg">
+                                    <span class="game-list-item-title">
+                                        Dota 2
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Dota 2 é um jogo eletrônico gratuito do gênero batalha multijogador, desenvolvido pela produtora Valve Corporation.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Smite" class="game-list-item-img" src="img/smite.jpg">
+                                    <span class="game-list-item-title">
+                                        Smite
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Smite é um jogo eletrônico do gênero multiplayer online battle arena em terceira pessoa desenvolvido e publicado por Hi-Rez Studios.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Heroes of the Storm" class="game-list-item-img" src="img/heroesofthestorm.jpg">
+                                    <span class="game-list-item-title">
+                                        Heroes of the Storm
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Heroes of the Storm é um jogo eletrônico de multiplayer online desenvolvido pela Blizzard Entertainment.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right arrow">
+                        </i>
+                    </div>
+                </div>
+                <!--end MOBA container-->
+                <!--start FPS container-->
+                <div class="game-list-container">
+                    <h1 class="game-list-title">
+                        FPS
+                    </h1>
+                    <div class="game-list-wrapper">
+                        <div class="game-list">
+                            <div class="game-list-item">
+                                <img alt="Valorant" class="game-list-item-img" src="img/valorant.jpg">
+                                    <span class="game-list-item-title">
+                                        Valorant
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Valorant é um jogo eletrônico multijogador gratuito para jogar de tiro em primeira pessoa desenvolvido e publicado pela Riot Games.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="CS: Global Offensive" class="game-list-item-img" src="img/csgo.jpg">
+                                    <span class="game-list-item-title">
+                                        CS: Global Offensive
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Counter-Strike: Global Offensive é um jogo online desenvolvido pela Valve Corporation e pela Hidden Path Entertainment.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Warface" class="game-list-item-img" src="img/warface.jpg">
+                                    <span class="game-list-item-title">
+                                        Warface
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Warface é um jogo eletrônico on-line free-to-play de tiro em primeira pessoa desenvolvido pela Blackwood Games.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="CoD: Black Ops Cold War" class="game-list-item-img" src="img/bocoldwar.jpeg">
+                                    <span class="game-list-item-title" style="font-size: 12px;">
+                                        CoD: Black Ops Cold War
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Call of Duty: Black Ops Cold War é um jogo de tiro em primeira pessoa desenvolvido pela Treyarch e Raven Software e publicado pela Activision.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Overwatch" class="game-list-item-img" src="img/overwatch.jpeg">
+                                    <span class="game-list-item-title">
+                                        Overwatch
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Overwatch é um jogo eletrônico multijogador de tiro em primeira pessoa desenvolvido e publicado pela Blizzard Entertainment.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Tom Clancy's Rainbow Six Siege" class="game-list-item-img" src="img/rainbowsix.jpg">
+                                    <span class="game-list-item-title" style="font-size: 11px;">
+                                        Tom Clancy's Rainbow Six Siege
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Tom Clancy's Rainbow Six Siege é um videojogo do género first person shooter produzido pela Ubisoft Montreal.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right arrow">
+                        </i>
+                    </div>
+                </div>
+                <!--end FPS container-->
+                <!-- start RPG container-->
+                <div class="game-list-container">
+                    <h1 class="game-list-title">
+                        RPG
+                    </h1>
+                    <div class="game-list-wrapper">
+                        <div class="game-list">
+                            <div class="game-list-item">
+                                <img alt="The Elder Scrolls V: Skyrim" class="game-list-item-img" src="img/skyrim.jpg">
+                                    <span class="game-list-item-title" style="font-size: 11px;">
+                                        The Elder Scrolls V: Skyrim
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        The Elder Scrolls V: Skyrim é um jogo eletrônico de RPG de ação desenvolvido pela Bethesda Game Studios.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="The Witcher 3: Wild Hunt" class="game-list-item-img" src="img/thewitcher3.jpg">
+                                    <span class="game-list-item-title" style="font-size: 11px;">
+                                        The Witcher 3: Wild Hunt
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        The Witcher 3: Wild Hunt é um jogo eletrônico de RPG de ação em mundo aberto desenvolvido pela CD Projekt RED.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="World of Warcraft" class="game-list-item-img" src="img/wow.jpg">
+                                    <span class="game-list-item-title">
+                                        World of Warcraft
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        World of Warcraft é um jogo on-line do gênero MMORPG, desenvolvido e distribuído pela produtora Blizzard Entertainment e lançado em 2004.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Monster Hunter World" class="game-list-item-img" src="img/monsterhunter.jpg">
+                                    <span class="game-list-item-title">
+                                        Monster Hunter World
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        A franquia Monster Hunter é uma série de jogos de fantasia desenvolvida e publicada pela Capcom.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                            <div class="game-list-item">
+                                <img alt="Horizon Zero Dawn" class="game-list-item-img" src="img/horizonzerodown.jpg">
+                                    <span class="game-list-item-title">
+                                        Horizon Zero Dawn
+                                    </span>
+                                    <p class="game-list-item-desc">
+                                        Horizon Zero Dawn é um jogo eletrônico de RPG de ação desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment.
+                                    </p>
+                                    <button class="game-list-item-btn">
+                                        DETALHES
+                                    </button>
+                                </img>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right arrow">
+                        </i>
+                    </div>
+                </div>
+                <!-- end RPG container-->
+            </div>
         </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a class="active" href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-    </div>
-
-	<script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
-</body>
+        <script charset="utf-8" src="script.js" type="text/javascript">
+        </script>
+    </body>
 </html>
