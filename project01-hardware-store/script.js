@@ -13,7 +13,7 @@ arrows.forEach((arrow, i) => {
     const itemNumber = gameLists[i].querySelectorAll("img").length;
     let clickCounter = 0;
     arrow.addEventListener("click", () => {
-        const ratio = Math.floor(window.innerWidth / 250);
+        const ratio = Math.floor(window.innerWidth / 220);
         clickCounter++;
         if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
             gameLists[i].style.transform = `translateX(${move-=250}px)`
