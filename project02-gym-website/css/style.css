@@ -1,0 +1,556 @@
+/*
+# Creator: Arreaum
+# GitHub: https://github.com/arriaoedu123/
+# Creation date: 03/09/2021
+# Upload date: 11/09/2021
+# Version: 1.2
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --cyan: #1483D5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background: #fff;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  transition: 0.5s;
+}
+
+header.sticky{
+  background: var(--cyan);
+}
+
+header .brand{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 5px;
+  border-radius: 5px;
+  padding: 5px 25px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* index */
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/section_one.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px 100px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+}
+
+.section-main h1 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.section-main p {
+  margin-top: 15px;
+  color: #fff;
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+}
+
+.scroll-line-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2rem;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-line-div.animate {
+  opacity: 0;
+}
+
+.scroll-line {
+  z-index: 20;
+  display: block;
+  width: 2px;
+  height: 70px;
+  margin-left: -1px;
+  background: #fff;
+  transform-origin: top;
+  transition: scaleY(0);
+  animation: animate 2.5s infinite 0.4s forwards;
+  animation-play-state: running;
+}
+
+.scroll-line-div i {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.scroll-line-div.animate .scroll-line {
+  animation-play-state: paused;
+}
+
+.container {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.content-container {
+  width: 90%;
+}
+
+.section-one {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  overflow: hidden;
+}
+
+.card {
+  width: 340px;
+  margin: 10px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.section-one.anim-card .card:nth-child(1),
+.section-one.anim-card .card-personal:nth-child(1) {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+  display: flex;
+} 
+
+.section-one.anim-card .card:nth-child(2),
+.section-one.anim-card .card-personal:nth-child(2) {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
+  display: flex;
+}
+
+.section-one.anim-card .card:nth-child(3),
+.section-one.anim-card .card-personal:nth-child(3) {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+  display: flex;
+}
+
+.section-one.anim-card .card:nth-child(4),
+.section-one.anim-card .card-personal:nth-child(4) {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+  display: flex;
+}
+
+.section-one.anim-card .card:nth-child(5),
+.section-one.anim-card .card-personal:nth-child(5) {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  display: flex;
+} 
+
+.section-one.anim-card .card:nth-child(6),
+.section-one.anim-card .card-personal:nth-child(6) {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+  display: flex;
+}
+
+.section-one.anim-card .card:nth-child(7),
+.section-one.anim-card .card-personal:nth-child(7) {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.4s both;
+  display: flex;
+} 
+
+.card i{
+  font-size: 34px;
+  color: var(--cyan);
+  margin-bottom: 10px;
+}
+
+.card h2{
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  width: 50%;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: var(--cyan);
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card a:hover,
+.card-personal a:hover {
+  transform: scale(1.05);
+}
+
+.separator { /* giving separator div a style */
+  width: 100%;
+  height: 2px;
+  border: 2px solid var(--cyan);
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.section-two .separator {
+  margin: 50px 0;
+  width: auto;
+}
+
+.separator h2 { /* centering separator div label and giving a color */
+  color: var(--cyan);
+  background: #fff;
+  text-transform: uppercase;
+  padding: 0 10px;
+  margin-left: 35px;
+}
+
+.section-two .separator h2 {
+  font-size: 42px;
+}
+
+.section-two{
+  padding: 20px 0;
+  color: #000;
+}
+
+.section-two p{
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.section-tree {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--cyan);
+  padding: 20px 20px 65px;
+  border-radius: 10px;
+}
+
+.section-tree img {
+  margin: 0 20px;
+  border: 2px solid #fff;
+}
+
+/* slick slider css */
+.section-tree .slick-prev,
+.section-tree .slick-next {
+  top: 110px;
+  z-index: 99;
+}
+
+.section-tree .slick-prev {
+  left: 10px;
+}
+
+.section-tree .slick-next {
+  right: 10px;
+}
+
+.section-tree .slick-dots {
+  width: auto;
+  bottom: 20px;
+}
+
+.section-tree .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.social-media a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+/* end slick slider css */
+/* end index css */
+
+/* personal css */
+
+.personal {
+  background: url(../img/section_one_personal.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-one h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-personal {
+  width: 340px;
+  margin: 10px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.card-personal img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.card-personal h2{
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.card-personal a {
+  width: 50%;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: var(--cyan);
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* end personal css */
+/* zumba instructor css */
+
+.zumba-instructor {
+  background: url(../img/section_one_zumbainstructor.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* end zumba instructor css */
+/* yoga teacher css */
+
+.yoga-teacher {
+  background: url(../img/section_one_yogateacher.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* end yoga teacher css */
+/* swimming teacher css */
+
+.swimming-teacher {
+  background: url(../img/section_one_swimmingteacher.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* end swimming teacher css */
+
+@media (max-width: 1300px){
+  header .btn{
+    display: block;
+    margin-right: 20px;
+  }
+
+  header .menu{
+    position: fixed;
+    background: var(--cyan);
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    right: -105%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+    width: 50%;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  header .menu.active{
+    right: 0;
+    width: 100%;
+  }
+
+  .scroll-line {
+    animation: animate 2.5s infinite reverse;
+  }
+
+  .scroll-line-div i {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-main h1 {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .section-main p {
+    font-size: 14px;
+  }
+
+  .separator { /* giving separator div a style */
+    display: flex;
+    justify-content: center;
+  }
+
+  .separator h2 {
+    padding: 0;
+    margin: 0;
+  }
+}
+      
+@keyframes animate {
+  0% {
+    transform: translateY(0) scaleY(0);
+    transform-origin: top;
+  }
+  45% {
+    transform: translateY(0) scaleY(1);
+    transform-origin: top;
+  }
+  50% {
+    transform: translateY(0) scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: translateY(0) scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
