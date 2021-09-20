@@ -62,6 +62,7 @@ header .menu a{
   color: #fff;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
   text-decoration: none;
   margin: 0 5px;
   border-radius: 5px;
@@ -138,7 +139,6 @@ header .btn{
   margin-left: -1px;
   background: #fff;
   transform-origin: top;
-  transition: scaleY(0);
   animation: animate 2.5s infinite 0.4s forwards;
   animation-play-state: running;
 }
@@ -263,7 +263,8 @@ header .btn{
   align-items: center;
 }
 
-.section-two .separator {
+.section-two .separator,
+.section-tree .separator {
   margin: 50px 0;
   width: auto;
 }
@@ -276,7 +277,8 @@ header .btn{
   margin-left: 35px;
 }
 
-.section-two .separator h2 {
+.section-two .separator h2,
+.section-tree .separator h2 {
   font-size: 42px;
 }
 
@@ -290,7 +292,7 @@ header .btn{
   margin: 30px 0;
 }
 
-.section-tree {
+.slider {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -299,32 +301,36 @@ header .btn{
   border-radius: 10px;
 }
 
-.section-tree img {
+.slider {
+  width: 100%;
+}
+
+.slider img {
   margin: 0 20px;
   border: 2px solid #fff;
 }
 
 /* slick slider css */
-.section-tree .slick-prev,
-.section-tree .slick-next {
+.slider .slick-prev,
+.slider .slick-next {
   top: 110px;
   z-index: 99;
 }
 
-.section-tree .slick-prev {
+.slider .slick-prev {
   left: 10px;
 }
 
-.section-tree .slick-next {
+.slider .slick-next {
   right: 10px;
 }
 
-.section-tree .slick-dots {
+.slider .slick-dots {
   width: auto;
   bottom: 20px;
 }
 
-.section-tree .slick-dotted.slick-slider {
+.slider .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
 
