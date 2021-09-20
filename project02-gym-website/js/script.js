@@ -34,7 +34,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 $(document).ready(function() { 
-  $('.section-tree').slick({
+  $('.slider').slick({
   dots: true,
   infinite: false,
   speed: 300,
