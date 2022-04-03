@@ -1,0 +1,231 @@
+/*
+# Creator: Arreaum
+# GitHub: https://github.com/arriaoedu123/
+# Creation date: 03/09/2021
+# Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background: #000;
+}
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('images/section-main.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.contato {
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato p {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.section-main h1,
+.section-main h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.section-main h2 {
+  font-size: 32px;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  transition: 0.5s;
+}
+
+header.sticky{
+  background: #1483D5;
+}
+
+header .brand{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 5px;
+  border-radius: 5px;
+  padding: 5px 25px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.section-one {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 100px;
+}
+
+.section-one img {
+  margin: 10px 20px;
+}
+
+.section-two,
+.section-three {
+  padding: 20px 100px;
+}
+
+.section-one h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.section-one h2,
+.section-two h2,
+.section-three h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.section-two p,
+.section-three p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+footer {
+  margin-top: 30px;
+  display: grid;
+  width: 100%;
+  height: 90px;
+  background-color: #1483D5;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.5fr;
+  padding: 20px;
+  grid-template-areas: 
+    "copyright info";  
+}
+
+.copyright,
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+
+.info {
+  grid-area: info;
+  flex-direction: column;
+}
+
+@media (max-width: 700px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+    width: 100%;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+      
